@@ -16,14 +16,6 @@
       "dest": "/assets/$1"
     },
     {
-      "src": "/app.js",
-      "dest": "/app.js"
-    },
-    {
-      "src": "/styles.css",
-      "dest": "/styles.css"
-    },
-    {
       "src": "/sitemap.xml",
       "dest": "/sitemap.xml"
     },
