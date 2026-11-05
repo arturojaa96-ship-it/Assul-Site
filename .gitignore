@@ -1,1 +1,14 @@
-node_modules
+.git/
+.vercel/
+.openai/
+.env
+.env.*
+!.env.example
+node_modules/
+npm-debug.log*
+*.zip
+*.tar
+*.tar.gz
+.DS_Store
+Thumbs.db
+checks/last-smoke.json

@@ -1,0 +1,231 @@
+{
+  "format": 1,
+  "note": "SHA-256 covers every packaged file except MANIFEST.json itself.",
+  "files": [
+    {
+      "path": ".editorconfig",
+      "bytes": 147,
+      "sha256": "3a151560c443f6fe8a734313554126e8625ff1ae0642d44115f9bd097b873390"
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 72,
+      "sha256": "57c3c1e3dfe96f5c516b40ea04d50a9fcea8d626fb70b2e85472d51f933f6e2c"
+    },
+    {
+      "path": ".github/workflows/check.yml",
+      "bytes": 432,
+      "sha256": "fa788a112c234c3fda2b2728358bc1571168191fddc866ee7ec88168d1214a95"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 143,
+      "sha256": "e7c5a246e0a49f451156355407a0cc024aaf0a06f4653e73a6e643f429fb05ba"
+    },
+    {
+      "path": "checks/assets.sha256.json",
+      "bytes": 2006,
+      "sha256": "5007b5b0c526a6f3608a354c3b2893e8f709e8640fe4a3c307152bf4aa6b30f1"
+    },
+    {
+      "path": "checks/QA.md",
+      "bytes": 3496,
+      "sha256": "891e7c4165475972dec521ccb7f5db7d4e621d7b38ba02b80a830a0b17b03a79"
+    },
+    {
+      "path": "DEPLOYMENT.md",
+      "bytes": 3407,
+      "sha256": "6a42cc01a5ae4f8cd5d56e5d520cd4d53679c3fccf4cca6f0196b63f57b08e3e"
+    },
+    {
+      "path": "DIFFERENCES.md",
+      "bytes": 1297,
+      "sha256": "d898f4607072a2c6d7106e03c69e8d64a2b58bdfab48bb1bcc8dba5a517423f8"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 203,
+      "sha256": "806698bafb5d66b45f8b6835f3707a54ccd5fb0ab36ab0af396caa087ca20369"
+    },
+    {
+      "path": "package.json",
+      "bytes": 328,
+      "sha256": "7b2ffe72902a65154c438abee9ec7a1ad376c2c724850ee0591fd9c4ba0389d0"
+    },
+    {
+      "path": "PENDING.md",
+      "bytes": 1874,
+      "sha256": "baa5e90896e8ee8c087242f627da7eff1c34dd6943be10d3c3b579e0bd2390e7"
+    },
+    {
+      "path": "public/assets/app.js",
+      "bytes": 5669,
+      "sha256": "2709a05d31082dfacfc11d71b8637717db07231edc2423f67f18f5cab25579a6"
+    },
+    {
+      "path": "public/assets/brand/favicon.svg",
+      "bytes": 497,
+      "sha256": "c4e053bf9de1b7db8cb7ec0c55be018177cfb8ba967a49289322c3d4a8a4e6ce"
+    },
+    {
+      "path": "public/assets/brand/icone-assul.svg",
+      "bytes": 416,
+      "sha256": "18d9a740178c8f6c68b4ffb321f6b91188d8848db1a6dbcf12ba5d77bda1a26f"
+    },
+    {
+      "path": "public/assets/brand/logo-assul-dark-bg.svg",
+      "bytes": 18264,
+      "sha256": "6e6fd16514795810ec3ceaf202b25b502550252f0c9d32b924d89df8f3c8c6da"
+    },
+    {
+      "path": "public/assets/brand/logo-assul-light-bg.svg",
+      "bytes": 18264,
+      "sha256": "7e04fad5864564b79d605601ae060a2121b24d913d788f0377faa3582e39d340"
+    },
+    {
+      "path": "public/assets/img/favicon-180.png",
+      "bytes": 7532,
+      "sha256": "3902f3843617d3ae7c76f4d6a333305f1996fc4b122b77eaacd432fdafc2bb93"
+    },
+    {
+      "path": "public/assets/img/favicon-192.png",
+      "bytes": 8339,
+      "sha256": "fb3690792854aa87a0f68723e3fb00a8a5262e65572e82c33a50a99787a66dba"
+    },
+    {
+      "path": "public/assets/img/favicon-32.png",
+      "bytes": 1220,
+      "sha256": "8edc324b26ffd05e490b8f914d9a605b19169bd759df6f0c86d52f7e7d34c4d8"
+    },
+    {
+      "path": "public/assets/img/favicon-512.png",
+      "bytes": 19016,
+      "sha256": "9b31916bb3d83af5753b1207562dd24d1a3daa37d2dfab9e31033a1d3f4bcf14"
+    },
+    {
+      "path": "public/assets/img/logo-continental.png",
+      "bytes": 12947,
+      "sha256": "f33f03854b9494e5fc363bf902ff561f510f420cd9c70866821d12dce90b3246"
+    },
+    {
+      "path": "public/assets/img/logo-continental.webp",
+      "bytes": 7772,
+      "sha256": "6ba13aa9f781fbe30c27b2c224369e16bf933c24068624f541513750ef9776b3"
+    },
+    {
+      "path": "public/assets/img/logo-electrolux.png",
+      "bytes": 12252,
+      "sha256": "2067844b22966d07061bac81462a7f8814ef18c48fab9530d5419e47b66a4a1f"
+    },
+    {
+      "path": "public/assets/img/logo-electrolux.webp",
+      "bytes": 6302,
+      "sha256": "fe6acdaad096a6efc7382aedb341d226375f0f98cca8bc708fe6676a7fa44393"
+    },
+    {
+      "path": "public/assets/img/og-image.jpg",
+      "bytes": 48568,
+      "sha256": "6a959c4ed502fb59de432acc24c3f1a6664426fece36d6baa0d8dadb246c6157"
+    },
+    {
+      "path": "public/assets/img/peca-compressor-600.webp",
+      "bytes": 11512,
+      "sha256": "c45af80dcfff79f3d7d0ff991d3ef186dd2f9a6b4f02c359812eacede816bd1b"
+    },
+    {
+      "path": "public/assets/img/peca-compressor.webp",
+      "bytes": 17294,
+      "sha256": "16a443e2f1e1fe0336f414efb46bdb34f26add7d5483fe366c831ae2d4a025c0"
+    },
+    {
+      "path": "public/assets/img/peca-placa-eletronica-600.webp",
+      "bytes": 24000,
+      "sha256": "b4dc99f189090201572393bb50a9f60f399e4dce68623d8e57e31e44e408b072"
+    },
+    {
+      "path": "public/assets/img/peca-placa-eletronica.webp",
+      "bytes": 45066,
+      "sha256": "1acd251b18d33d01912a071029694be678222422859efdf7cbe942b005e41a4f"
+    },
+    {
+      "path": "public/assets/img/peca-refil-purificador-600.webp",
+      "bytes": 26320,
+      "sha256": "92cef3b543083708a16a63dee2cf8fdf66a135595e992302b349eb81ed863485"
+    },
+    {
+      "path": "public/assets/img/peca-refil-purificador.webp",
+      "bytes": 41628,
+      "sha256": "1f625231ac7c70248aa45078da26cb34e2bc76a68c8c380ec7baf0300bd7d1ff"
+    },
+    {
+      "path": "public/assets/styles.css",
+      "bytes": 13330,
+      "sha256": "e08e17594396382d0ab336867ec818157ba002b720610e4d76fad56ebee7eeae"
+    },
+    {
+      "path": "public/index.html",
+      "bytes": 22855,
+      "sha256": "90174e27695e65b10587c973685879333f308ca1199966d9a3edf49c8b88acae"
+    },
+    {
+      "path": "public/privacidade.html",
+      "bytes": 3879,
+      "sha256": "f63ef7e6b5bcd8c802335e7c5d0c7a3b7781838d47feca84c37ace15e8e19fe1"
+    },
+    {
+      "path": "public/robots.txt",
+      "bytes": 91,
+      "sha256": "843bd04ff70988c6fa782a39f86a050edfb2ae702a1a875e043534c1c5e62d42"
+    },
+    {
+      "path": "public/site.webmanifest",
+      "bytes": 373,
+      "sha256": "ca3c2020903c48c7bc5d829749ee48dc1ec8885c956bf18128db6f068c7eb730"
+    },
+    {
+      "path": "public/sitemap.xml",
+      "bytes": 207,
+      "sha256": "1225e79299d615a5371eeff440daa4a1204af6c587e235410b5f09c6a5f28b85"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2444,
+      "sha256": "8a7c6d0784b88861bed6927bc41779f80e891ab3e401236054eadd56dce9098e"
+    },
+    {
+      "path": "scripts/check.cjs",
+      "bytes": 6869,
+      "sha256": "b4d0d44fe13ae6460ee77f98612394bd2b41ec6e107eebfc42414dd16419808d"
+    },
+    {
+      "path": "scripts/manifest.cjs",
+      "bytes": 961,
+      "sha256": "7938480178b597b98c46f34fe0e1e25dc0fdc3f43381a9c06cf316c1f45fcf31"
+    },
+    {
+      "path": "scripts/serve.cjs",
+      "bytes": 1649,
+      "sha256": "42a5b550390925a0082f4eb8b83893c40db23468429d3269afd9a98b983aa10e"
+    },
+    {
+      "path": "scripts/smoke.cjs",
+      "bytes": 1139,
+      "sha256": "daef5f2d84ec1a13874d245b18e7bd99444a300a3f0620b1ab0b131c6cb33541"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 3633,
+      "sha256": "1e4df0fdba28bfa6c58f65bbb9aa903f73f5cf5e423133357e8da52f49668ba8"
+    },
+    {
+      "path": "SOURCES.md",
+      "bytes": 3284,
+      "sha256": "086028dea75954ca44ceba688acbf3e395e7f60eaf254ea2d7af516605f84894"
+    },
+    {
+      "path": "vercel.json",
+      "bytes": 1275,
+      "sha256": "3c62cb0769cb0acbe4680ec7dac9419d7c431bb7edaa54637424fda5f337da70"
+    }
+  ]
+}
