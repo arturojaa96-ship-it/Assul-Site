@@ -288,3 +288,20 @@ address { font-style: normal; margin-bottom: 14px; line-height: 1.6; }
 .pre-lancamento { background:#fff2d5; color:#392600; padding:10px 0; font-size:.85rem; line-height:1.45; border-bottom:1px solid #e2be70; }
 .voltar-inicio { margin-left:auto; }
 button:disabled { opacity:.65; cursor:not-allowed; }
+
+/* Optional privacy controls: equal choices, no modal trap, keyboard accessible. */
+.privacy-panel { position: fixed; inset: auto 0 0; z-index: 100; background: var(--superficie); color: var(--texto); border-top: 3px solid var(--laranja); box-shadow: 0 -6px 30px rgba(0,0,0,.2); max-height: 85vh; overflow: auto; overscroll-behavior: contain; }
+.privacy-panel[hidden], .privacy-open[hidden], .privacy-cancel[hidden] { display: none; }
+.privacy-content { width: min(100% - 32px, 1080px); margin: 0 auto; padding: 20px 0; }
+.privacy-content h2 { font-size: 1.2rem; margin-bottom: 8px; }
+.privacy-content p { font-size: .92rem; margin-bottom: 10px; }
+.privacy-status { font-weight: 600; }
+.privacy-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.privacy-choice { background: var(--superficie); color: var(--titulo); border: 2px solid var(--titulo); flex: 1 1 220px; }
+.privacy-choice:hover { background: var(--bg); }
+.privacy-open, .privacy-cancel { font: inherit; cursor: pointer; text-decoration: underline; background: transparent; border: 0; padding: 12px; }
+.privacy-open { display: block; margin: 16px auto 0; color: #fff; }
+.privacy-cancel { color: var(--titulo); }
+.privacy-open:focus-visible, .privacy-cancel:focus-visible, .privacy-choice:focus-visible { outline: 3px solid var(--foco); outline-offset: 3px; }
+@media (max-width: 520px) { .privacy-actions { flex-direction: column; align-items: stretch; } .privacy-choice { flex-basis: auto; width: 100%; } }
+@media print { .privacy-panel, .privacy-open { display: none !important; } }
