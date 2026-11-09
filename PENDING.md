@@ -9,7 +9,7 @@ Pendientes operativos, sin datos inventados en la página:
 - Canal formal de privacidad y eventual encargado: no se designó persona ni correo. Las solicitudes se orientan al WhatsApp confirmado con asunto "Privacidade/LGPD".
 - Procedimientos posteriores de tratamiento y conservación de conversaciones: no se inventaron plazos ni prácticas. La Assul debe aclararlos en el atendimento y mantener el aviso actualizado.
 - Enlace directo al perfil/reseñas de Google: se conserva una búsqueda, sin presentar una puntuación o cantidad de reseñas inventada.
-- Medición de conversiones: GTM/GA4 están retirados. No se reutilizará un contenedor remoto sin revisar sus etiquetas y la decisión de medición.
+- Medición publicitaria: candidato local Ads directo para Peças, conservando GTM pero con el gate de esta copia desactivado. Faltan validar configuración remota, payloads y CSP antes de activar/publicar. No hay GA4 ni acciones de conversión añadidas. Véase `review/GOOGLE-ADS-PREPARATION.md`.
 
 Destino verificado: equipo **Assul's projects**, proyecto **assul-site**, conectado a `arturojaa96-ship-it/Assul-Site`, rama `main`, con `www.xn--assulautorizadapeas-myb.com.br` en Production y configuración válida. Framework Preset **Other**, Root Directory vacía, Node.js **24** y ningún override de compilación.
 

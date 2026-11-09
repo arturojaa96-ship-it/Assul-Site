@@ -39,8 +39,8 @@
     },
     {
       "path": "DIFFERENCES.md",
-      "bytes": 1297,
-      "sha256": "d898f4607072a2c6d7106e03c69e8d64a2b58bdfab48bb1bcc8dba5a517423f8"
+      "bytes": 1511,
+      "sha256": "9187bd9fda36f94d71c4b77075dd21993799ed594e0a0484f129dd2ac4b95213"
     },
     {
       "path": "package-lock.json",
@@ -54,8 +54,8 @@
     },
     {
       "path": "PENDING.md",
-      "bytes": 1874,
-      "sha256": "baa5e90896e8ee8c087242f627da7eff1c34dd6943be10d3c3b579e0bd2390e7"
+      "bytes": 2023,
+      "sha256": "ca9aaf16899dd29099417fbe134f47d65290c9d0625d81a654a2d1a2aed4c42e"
     },
     {
       "path": "public/assets/app.js",
@@ -159,8 +159,8 @@
     },
     {
       "path": "public/assets/privacy.js",
-      "bytes": 8788,
-      "sha256": "cbbd8c91fcad486ba3133d22853c25064cee716b8f7d93e9128c39c75d6bfb1d"
+      "bytes": 10481,
+      "sha256": "c5c4a81de86f7fed4f380b6f8003732fa1b134ca33a2b9129eaecff053310a50"
     },
     {
       "path": "public/assets/styles.css",
@@ -169,13 +169,13 @@
     },
     {
       "path": "public/index.html",
-      "bytes": 24071,
-      "sha256": "8c6cd6303ae6bf23cc51cf0c84f032253dc51f25b7a4b655d69997e441485ab3"
+      "bytes": 24310,
+      "sha256": "29b3a523fb1f8e7e80cb6d1f53cde39b63fd4ac4fd4ae357302bd797d0c4552a"
     },
     {
       "path": "public/privacidade.html",
-      "bytes": 7294,
-      "sha256": "359f697b3c6b02a54ce2533354715582079870ed95c29b8ffa0f9b00b271a48b"
+      "bytes": 8568,
+      "sha256": "66b554c4b7d72293a968d1b3b545c52f9b7df93d3d975531f4787a834791c038"
     },
     {
       "path": "public/robots.txt",
@@ -194,8 +194,18 @@
     },
     {
       "path": "README.md",
-      "bytes": 2444,
-      "sha256": "8a7c6d0784b88861bed6927bc41779f80e891ab3e401236054eadd56dce9098e"
+      "bytes": 2797,
+      "sha256": "bfae154a3c18b3e6e436fcf821c725be06f460b9ccc7042ccfe4d215678e446a"
+    },
+    {
+      "path": "review/GOOGLE-ADS-CSP-REVIEW.json",
+      "bytes": 3092,
+      "sha256": "f6edf0776bb920ade20db5dcb4647a2cd9c8b9752a537dfb72c6254307ed4513"
+    },
+    {
+      "path": "review/GOOGLE-ADS-PREPARATION.md",
+      "bytes": 8135,
+      "sha256": "85b084e50c52e9f4a22be6c6532129bd4e87a6df5de588545259ac503bcb91f3"
     },
     {
       "path": "scripts/check.cjs",
@@ -219,13 +229,13 @@
     },
     {
       "path": "scripts/test-privacy.cjs",
-      "bytes": 12208,
-      "sha256": "0cd3ab0bed2d2b92224e766979aa424c4a753bbea93e48f3a30440ab01090a30"
+      "bytes": 19824,
+      "sha256": "06151f90e48b877f3f4e80f9fa57c27464343b1a89ef4b1ed2c03e86e3b9a3fb"
     },
     {
       "path": "SECURITY.md",
-      "bytes": 3633,
-      "sha256": "1e4df0fdba28bfa6c58f65bbb9aa903f73f5cf5e423133357e8da52f49668ba8"
+      "bytes": 3855,
+      "sha256": "4718557a3e68f6af0857c203829a77744a2dcdd8650db0341ff86e57e48228cb"
     },
     {
       "path": "SOURCES.md",

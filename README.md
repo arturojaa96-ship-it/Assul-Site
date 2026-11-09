@@ -1,5 +1,7 @@
 # Assul - Claude v2 para GitHub e Vercel
 
+**Nota del candidato local del 9 de noviembre:** esta copia prepara Google tag directa para Peças y conserva GTM, pero ambos permanecen bloqueados por el gate de revisión. No está lista para publicar. Consulte `review/GOOGLE-ADS-PREPARATION.md` para el alcance actual; las instrucciones de despliegue de la base no autorizan activar este candidato.
+
 Versión elegida por el usuario el 5 de noviembre de 2026. WhatsApp confirmado: **+55 41 3667-5877**. Se preparó sobre una copia del original; la vista pública de opiniones y la carpeta original no se modificaron.
 
 El destino está verificado: proyecto **assul-site** del equipo **Assul's projects**, conectado a `arturojaa96-ship-it/Assul-Site`, rama `main`, y al dominio `www.xn--assulautorizadapeas-myb.com.br`. Vercel tiene Framework Preset **Other**, Root Directory vacía, Node.js **24** y ningún override de compilación.
