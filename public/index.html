@@ -50,6 +50,7 @@
   "image": "https://www.xn--assulautorizadapeas-myb.com.br/assets/img/og-image.jpg",
   "logo": "https://www.xn--assulautorizadapeas-myb.com.br/assets/img/favicon-512.png"
 }</script>
+  <script src="assets/privacy.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
@@ -377,6 +378,7 @@
       <a href="https://www.instagram.com/assul.assistencia/" rel="noopener">Instagram</a>
     </nav>
   </div>
+<button class="privacy-open" type="button" data-privacy-open hidden>Preferências de privacidade</button>
 </footer>
 
 <a class="fab" data-wpp data-cta="fab" href="https://wa.me/554136675877" aria-label="Abrir conversa no WhatsApp">
@@ -384,5 +386,18 @@
 </a>
 
 <script src="assets/app.js" defer></script>
+<section id="privacy-panel" class="privacy-panel" role="region" aria-labelledby="privacy-title" hidden>
+  <div class="privacy-content">
+    <h2 id="privacy-title">Sua privacidade</h2>
+    <p>Podemos carregar o Google Tag Manager, uma ferramenta opcional do Google para gerenciar etiquetas. Ao permitir, dados técnicos da conexão, como IP e informações do navegador, serão enviados ao Google.</p>
+    <p>Esta permissão não autoriza cookies de análise ou publicidade. O atendimento pelo WhatsApp funciona com qualquer escolha. <a href="privacidade.html">Leia a política de privacidade</a>.</p>
+    <p id="privacy-status" class="privacy-status" role="status" aria-live="polite"></p>
+    <div class="privacy-actions">
+      <button id="privacy-reject" class="btn privacy-choice" type="button">Não permitir</button>
+      <button id="privacy-accept" class="btn privacy-choice" type="button">Permitir Google Tag Manager</button>
+      <button id="privacy-cancel" class="privacy-cancel" type="button" hidden>Cancelar</button>
+    </div>
+  </div>
+</section>
 </body>
 </html>
