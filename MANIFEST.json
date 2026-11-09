@@ -49,8 +49,8 @@
     },
     {
       "path": "package.json",
-      "bytes": 328,
-      "sha256": "7b2ffe72902a65154c438abee9ec7a1ad376c2c724850ee0591fd9c4ba0389d0"
+      "bytes": 426,
+      "sha256": "685dda7f2a5dd2b57666af19b048b1adddf0cc8faf718d5c9660e2df404dcd41"
     },
     {
       "path": "PENDING.md",
@@ -158,19 +158,24 @@
       "sha256": "1f625231ac7c70248aa45078da26cb34e2bc76a68c8c380ec7baf0300bd7d1ff"
     },
     {
+      "path": "public/assets/privacy.js",
+      "bytes": 8788,
+      "sha256": "cbbd8c91fcad486ba3133d22853c25064cee716b8f7d93e9128c39c75d6bfb1d"
+    },
+    {
       "path": "public/assets/styles.css",
-      "bytes": 13330,
-      "sha256": "e08e17594396382d0ab336867ec818157ba002b720610e4d76fad56ebee7eeae"
+      "bytes": 14902,
+      "sha256": "a93e13388dcff89430ee1b9defc2cbae5e4c4de23474197d77de3b2562954ab4"
     },
     {
       "path": "public/index.html",
-      "bytes": 22855,
-      "sha256": "90174e27695e65b10587c973685879333f308ca1199966d9a3edf49c8b88acae"
+      "bytes": 24071,
+      "sha256": "8c6cd6303ae6bf23cc51cf0c84f032253dc51f25b7a4b655d69997e441485ab3"
     },
     {
       "path": "public/privacidade.html",
-      "bytes": 3879,
-      "sha256": "f63ef7e6b5bcd8c802335e7c5d0c7a3b7781838d47feca84c37ace15e8e19fe1"
+      "bytes": 7294,
+      "sha256": "359f697b3c6b02a54ce2533354715582079870ed95c29b8ffa0f9b00b271a48b"
     },
     {
       "path": "public/robots.txt",
@@ -209,8 +214,13 @@
     },
     {
       "path": "scripts/smoke.cjs",
-      "bytes": 1139,
-      "sha256": "daef5f2d84ec1a13874d245b18e7bd99444a300a3f0620b1ab0b131c6cb33541"
+      "bytes": 1164,
+      "sha256": "0a0583b9d90fc6dacd1decb705db781d53e09ca58b22859d666fa6d38054476e"
+    },
+    {
+      "path": "scripts/test-privacy.cjs",
+      "bytes": 12208,
+      "sha256": "0cd3ab0bed2d2b92224e766979aa424c4a753bbea93e48f3a30440ab01090a30"
     },
     {
       "path": "SECURITY.md",
@@ -224,8 +234,8 @@
     },
     {
       "path": "vercel.json",
-      "bytes": 1275,
-      "sha256": "3c62cb0769cb0acbe4680ec7dac9419d7c431bb7edaa54637424fda5f337da70"
+      "bytes": 1315,
+      "sha256": "68c0da90fe10a19d8f87de689363a13de65fc2affecc07fa813e4bf054012037"
     }
   ]
 }
