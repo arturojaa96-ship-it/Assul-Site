@@ -1,5 +1,5 @@
-/* LOCAL CANDIDATE: direct Google tag AW-16968445825 plus existing GTM-5RM4RSMJ.
- * Activation remains blocked pending remote settings, privacy and CSP review. */
+/* Assul Peças: direct Google tag AW-16968445825 plus existing GTM-5RM4RSMJ.
+ * Both loaders require specific V2 consent and the approved Peças hostname. */
 (function () {
   'use strict';
   if (window.AssulPecasPrivacy) return;
@@ -10,8 +10,8 @@
   var cancel = document.getElementById('privacy-cancel');
   if (!panel || !status || !accept || !reject || !cancel) return;
   var openers = document.querySelectorAll('[data-privacy-open]');
-  // Keep false until remote tag settings, CSP, payload checks and activation are approved.
-  var ADS_CONFIGURATION_REVIEWED = false;
+  // Activation authorized for Peças; retain this switch for a reviewed rollback.
+  var ADS_CONFIGURATION_REVIEWED = true;
   var KEY = 'assul_pecas_privacy_v2';
   var MAX_AGE = 180 * 24 * 60 * 60 * 1000;
   var allowed = false;
