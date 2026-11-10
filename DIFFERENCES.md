@@ -4,7 +4,7 @@ Respecto al original de Claude, se conservan estructura, colores, responsive, lo
 
 Se incorporaron razón social/CNPJ/dirección contrastados y el teléfono elegido en todos los contactos. Se quitaron placeholders legales, horarios inventados y promesas comerciales específicas sin confirmar. Se reformuló el aviso de privacidad para reflejar la transmisión real al abrir WhatsApp.
 
-En la base inicial se retiró GTM; el commit 0471cd7 lo reincorporó con consentimiento. La actualización del 10 de noviembre conserva ese cargador y añade Ads directo con consentimiento V2 y CSP mínima. Véase `checks/ADS-QA-20261110.md`. Se corrigió la apertura duplicada y el fallback GET de formularios, y se preparó una salida `public/` explícita con cabeceras seguras, canonical y sitemap del dominio autorizado. La antigua configuración `/api` → `server.js` no existe en esta versión.
+En la base inicial se retiró GTM; el commit 0471cd7 lo reincorporó con consentimiento. La actualización GTM-only del 10 de noviembre retira la etiqueta Ads directa y conserva únicamente GTM con consentimiento V2 y la CSP aprobada sin cambios. Véase `checks/GTM-ONLY-QA-20261110.md`; el informe ADS anterior es histórico. Se corrigió la apertura duplicada y el fallback GET de formularios, y se preparó una salida `public/` explícita con cabeceras seguras, canonical y sitemap del dominio autorizado. La antigua configuración `/api` → `server.js` no existe en esta versión.
 
 Respecto a la copia pública de opiniones, esta candidata sí prepara conversaciones al WhatsApp confirmado, incluye la identidad legal y está configurada para el dominio final. La vista de opiniones mantiene su cartel de demostración y sus contactos desactivados; no se modificó.
 

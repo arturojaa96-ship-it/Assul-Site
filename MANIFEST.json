@@ -33,6 +33,11 @@
       "sha256": "5007b5b0c526a6f3608a354c3b2893e8f709e8640fe4a3c307152bf4aa6b30f1"
     },
     {
+      "path": "checks/GTM-ONLY-QA-20261110.md",
+      "bytes": 2130,
+      "sha256": "78fb2749c8e913e2b3e5691d5a03f67bc7fa8b30a3f665ed59c0918ab90b2fcc"
+    },
+    {
       "path": "checks/QA.md",
       "bytes": 3496,
       "sha256": "891e7c4165475972dec521ccb7f5db7d4e621d7b38ba02b80a830a0b17b03a79"
@@ -44,8 +49,8 @@
     },
     {
       "path": "DIFFERENCES.md",
-      "bytes": 1524,
-      "sha256": "bde97702a481d39fed45333a729f966e02c0894b7e26de786f9f278cbe36137a"
+      "bytes": 1608,
+      "sha256": "d5a097596e65997629f8912c2fff79e03a91aab718b23dd827b342babc93793a"
     },
     {
       "path": "package-lock.json",
@@ -59,8 +64,8 @@
     },
     {
       "path": "PENDING.md",
-      "bytes": 2002,
-      "sha256": "c932e054acab0dd54a5449eb0a53076f9f7e2946b4cdb94217ba949ee7a56d39"
+      "bytes": 2067,
+      "sha256": "f5243f204191e21363c46254001f537212eaba897a8b55b6f7664d49af4733f0"
     },
     {
       "path": "public/assets/app.js",
@@ -164,8 +169,8 @@
     },
     {
       "path": "public/assets/privacy.js",
-      "bytes": 10467,
-      "sha256": "9a3fec3889efb40ca166ee7a5f88bca070e1e2c43e5680a4f7057c9674458e89"
+      "bytes": 9942,
+      "sha256": "de7015bfe8d52646bd550e3b15c8e4dc9aec055b417dd3d1d5eed3228901cfc2"
     },
     {
       "path": "public/assets/styles.css",
@@ -199,8 +204,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2858,
-      "sha256": "424f2a84473ce1b42c0601a6f8e00d57a3841f573ecd2176b43edc240bfdf140"
+      "bytes": 2899,
+      "sha256": "71b25307603fa60b1cecc22bf4249b12eda3e48456b253f07b5af6fec96d1970"
     },
     {
       "path": "scripts/check.cjs",
@@ -224,13 +229,13 @@
     },
     {
       "path": "scripts/test-privacy.cjs",
-      "bytes": 19927,
-      "sha256": "8998384334af11117be4d3ce965b826efcdf389c47434326a2663354bed159cb"
+      "bytes": 19288,
+      "sha256": "72fe6cd83a42e26ad9f821c3dbb56ce6d20b4c62eda87e686cba9bb6f4e323dc"
     },
     {
       "path": "SECURITY.md",
-      "bytes": 3920,
-      "sha256": "90a1822fe0ccc0351b909d27c58673d5f509426375c0cf0ce8ca9b171bdba78c"
+      "bytes": 4011,
+      "sha256": "a5d9c2634031e380cdcde67bfd50d4ed53c0592b89cc149723a6cd9dcbdc1fd9"
     },
     {
       "path": "SOURCES.md",
