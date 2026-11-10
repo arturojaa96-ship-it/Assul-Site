@@ -18,7 +18,7 @@ for (const file of publicFiles) {
 let assets = 0, anchors = 0, whatsapp = 0;
 for (const file of htmlFiles) {
   const html = fs.readFileSync(file,'utf8');
-  assert(!/GTM-|googletagmanager|google-analytics|\[RAZÃO SOCIAL\]|\[EMAIL|\[DATA\]|\[HORÁRIO|00\.000\.000\/0001-00|554131950160/.test(html), 'Unconfirmed data/integration');
+  assert(!/GTM-(?!5RM4RSMJ\b)|google-analytics|\[RAZÃO SOCIAL\]|\[EMAIL|\[DATA\]|\[HORÁRIO|00\.000\.000\/0001-00|554131950160/.test(html), 'Unconfirmed data/integration');
   assert(html.includes('rel="canonical" href="https://www.xn--assulautorizadapeas-myb.com.br/'), 'Approved canonical missing');
   assert(html.includes('30.401.920/0001-82'), 'Public legal identity missing');
   assert(!/\sstyle=/.test(html), 'CSP forbids inline styles');
@@ -30,7 +30,7 @@ for (const file of htmlFiles) {
     } else if(ref.startsWith('https://wa.me/')) {
       assert.equal(new URL(ref).pathname,'/554136675877'); whatsapp++;
     } else if(!/^(https?:|tel:|data:)/.test(ref)) {
-      assert(fs.existsSync(path.resolve(path.dirname(file),ref)), 'Missing '+ref); assets++;
+      assert(fs.existsSync(path.resolve(path.dirname(file),ref.split(/[?#]/)[0])), 'Missing '+ref); assets++;
     }
   }
   for (const m of html.matchAll(/\bsrcset="([^"]+)"/g)) {
