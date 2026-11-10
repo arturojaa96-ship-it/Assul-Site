@@ -1,5 +1,7 @@
 # Assul - Claude v2 para GitHub e Vercel
 
+**Actualización del 10 de noviembre:** Google tag directa AW-16968445825 y el GTM existente requieren consentimiento V2 específico y solo cargan en el dominio de Peças o las pruebas locales. Se aplicó la CSP mínima aprobada y se validó el comportamiento actual en Chrome. No hay GA4, eventos de conversión ni cambios de campañas. Consulte `checks/ADS-QA-20261110.md` para resultados, límites y rollback.
+
 Versión elegida por el usuario el 5 de noviembre de 2026. WhatsApp confirmado: **+55 41 3667-5877**. Se preparó sobre una copia del original; la vista pública de opiniones y la carpeta original no se modificaron.
 
 El destino está verificado: proyecto **assul-site** del equipo **Assul's projects**, conectado a `arturojaa96-ship-it/Assul-Site`, rama `main`, y al dominio `www.xn--assulautorizadapeas-myb.com.br`. Vercel tiene Framework Preset **Other**, Root Directory vacía, Node.js **24** y ningún override de compilación.
