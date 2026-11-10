@@ -49,8 +49,8 @@ function make(options = {}) {
   class Clock extends Date { static now() { return clock; } }
   const ctx = { window, document: doc, URL, Date: Clock, JSON, Array, Object, Number };
   function evaluate() {
-    // Enabled mode is simulated only in memory; no external script is executed.
-    const code = options.draftMode ? source : source.replace('var ADS_CONFIGURATION_REVIEWED = false;', 'var ADS_CONFIGURATION_REVIEWED = true;');
+    // Execute the production loader in a VM; no external script is executed.
+    const code = options.draftMode ? source.replace('var ADS_CONFIGURATION_REVIEWED = true;', 'var ADS_CONFIGURATION_REVIEWED = false;') : source;
     vm.runInNewContext(code, ctx, { timeout: 1000 });
   }
   evaluate();
@@ -166,11 +166,11 @@ test('Full DOM creation or insertion failure remains revocable', () => {
 test('Exact host allowlist excludes main Assul, previews and suffix lookalikes', () => {
   for (const url of ['https://www.assul.com.br/', 'https://assul.com.br/', 'https://assul-site.vercel.app/', 'https://www.xn--assulautorizadapeas-myb.com.br.evil.example/']) { const c = accepted({ url }); assert.equal(c.scripts.length, 0); assert(!c.window.dataLayer); }
 });
-test('Local QA hosts can simulate both scripts while source gate stays off', () => {
+test('Local QA hosts load both consent-controlled scripts in the VM', () => {
   for (const url of ['http://localhost:8790/', 'http://127.0.0.1:8790/']) singlePair(accepted({ url }));
 });
-test('Unmodified candidate is inert after acceptance and saved V2 permission', () => {
-  assert.equal((source.match(/var ADS_CONFIGURATION_REVIEWED = false;/g) || []).length, 1);
+test('Rollback switch remains inert after acceptance and saved V2 permission', () => {
+  assert.equal((source.match(/var ADS_CONFIGURATION_REVIEWED = true;/g) || []).length, 1);
   for (const options of [{ draftMode: true }, { draftMode: true, saved: saved(true) }]) { const c = accepted(options); assert.equal(c.scripts.length, 0); assert(!c.window.dataLayer); assert.equal(c.window.AssulPecasPrivacy.adsEnabled, false); c.open(); assert(c.elements['privacy-status'].textContent.includes('desativada')); }
 });
 test('Local loader never reads form fields or uses extra transmission APIs', () => {
@@ -182,8 +182,8 @@ test('Only one direct base config, one Ads loader and one existing GTM loader; n
 test('Both pages contain one consent UI and loader, with no external-script or noscript bypass', () => {
   for (const file of ['index.html', 'privacidade.html']) { const h = fs.readFileSync(path.join(root, 'public', file), 'utf8'); for (const id of ['privacy-panel', 'privacy-status', 'privacy-accept', 'privacy-reject', 'privacy-cancel']) assert.equal((h.match(new RegExp('id="' + id + '"', 'g')) || []).length, 1); assert.equal((h.match(/src="assets\/privacy\.js"/g) || []).length, 1); assert(h.includes('data-privacy-open hidden')); assert(!/<noscript[\s\S]*?iframe/i.test(h)); assert(!/src="https:\/\/www.googletagmanager.com/.test(h)); }
 });
-test('Deployable CSP remains the unchanged restrictive policy, pending explicit review', () => {
-  const policy = "default-src 'self'; script-src 'self' https://www.googletagmanager.com/gtm.js; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'";
+test('Deployable CSP permits only the approved loader and measurement endpoint', () => {
+  const policy = "default-src 'self'; script-src 'self' https://www.googletagmanager.com/gtm.js https://www.googletagmanager.com/gtag/js; style-src 'self'; img-src 'self' data: https://pagead2.googlesyndication.com/ccm/collect; font-src 'self'; connect-src https://pagead2.googlesyndication.com/ccm/collect; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'";
   const config = JSON.parse(fs.readFileSync(path.join(root, 'vercel.json'), 'utf8')); assert.equal(config.headers[0].headers.find(x => x.key === 'Content-Security-Policy').value, policy);
 });
-console.log(JSON.stringify({ result: 'PASS', groups: groups.length, mode: 'Offline VM; source gate false; enabled behavior simulated in memory; external scripts never executed', cases: groups }, null, 2));
+console.log(JSON.stringify({ result: 'PASS', groups: groups.length, mode: 'Offline VM; production loader active only after consent; external scripts never executed', cases: groups }, null, 2));
