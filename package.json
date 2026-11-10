@@ -4,7 +4,7 @@
   "private": true,
   "description": "Candidata estática Assul para GitHub e Vercel",
   "scripts": {
-    "check": "node scripts/check.cjs && node scripts/test-privacy.cjs",
+    "check": "node scripts/check.cjs && node scripts/test-privacy.cjs && node scripts/test-matheus.cjs",
     "smoke": "node scripts/smoke.cjs",
     "preview": "node scripts/serve.cjs",
     "manifest": "node scripts/manifest.cjs",

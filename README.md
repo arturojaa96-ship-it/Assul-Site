@@ -1,6 +1,6 @@
 # Assul - Claude v2 para GitHub e Vercel
 
-**Actualización GTM-only del 10 de noviembre:** se retira la instalación directa AW-16968445825. GTM-5RM4RSMJ queda como único cargador local, sujeto al consentimiento V2 específico y al dominio de Peças o pruebas locales. La CSP aprobada no cambia. No se añaden conversiones ni se modifica el contenedor remoto o las campañas. Validación local y límites en `checks/GTM-ONLY-QA-20261110.md`; el informe ADS anterior se conserva como histórico.
+**Actualización literal de Matheus, 10 de noviembre de 2026:** candidata local, no publicada. El snippet se solicita al abrir ambas páginas, incluso ante una recusa. La interfaz envía señales de consentimiento, pero su ejecución diferida no garantiza negación anterior al primer GTM asíncrono. Retirar permiso no descarga GTM ni impide su conexión inicial. No se instala Ads directo ni se crean eventos de conversión locales. La CSP admite únicamente el hash del bloque inline confirmado, sin nuevos dominios ni unsafe-inline. Los informes GTM-only/ADS anteriores describen versiones históricas. Ver `checks/MATHEUS-EXACT-QA-20261110.md` para pruebas y límites actuales.
 
 Versión elegida por el usuario el 5 de noviembre de 2026. WhatsApp confirmado: **+55 41 3667-5877**. Se preparó sobre una copia del original; la vista pública de opiniones y la carpeta original no se modificaron.
 
