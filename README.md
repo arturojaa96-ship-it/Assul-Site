@@ -1,6 +1,6 @@
 # Assul - Claude v2 para GitHub e Vercel
 
-**Nota del candidato local del 9 de noviembre:** esta copia prepara Google tag directa para Peças y conserva GTM, pero ambos permanecen bloqueados por el gate de revisión. No está lista para publicar. Consulte `review/GOOGLE-ADS-PREPARATION.md` para el alcance actual; las instrucciones de despliegue de la base no autorizan activar este candidato.
+**Actualización del 10 de noviembre:** Google tag directa AW-16968445825 y el GTM existente requieren consentimiento V2 específico y solo cargan en el dominio de Peças o las pruebas locales. Se aplicó la CSP mínima aprobada y se validó el comportamiento actual en Chrome. No hay GA4, eventos de conversión ni cambios de campañas. Consulte `checks/ADS-QA-20261110.md` para resultados, límites y rollback.
 
 Versión elegida por el usuario el 5 de noviembre de 2026. WhatsApp confirmado: **+55 41 3667-5877**. Se preparó sobre una copia del original; la vista pública de opiniones y la carpeta original no se modificaron.
 

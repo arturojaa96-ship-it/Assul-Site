@@ -15,8 +15,8 @@ El riesgo pertinente del código estático es XSS, navegación a destinos manipu
 - Formularios: validación de modelo, consentimiento requerido y mensajes de error visibles. Se quitaron atributos `name` y los botones empiezan desactivados hasta registrar los handlers; sin JS no se envían campos mediante GET al hosting.
 - Se corrigió la apertura duplicada por `window.open(...,'noopener')` y el fallback: cada formulario navega una sola vez mediante `location.assign`.
 - La política informa que el texto llega a WhatsApp al abrir la conversación, antes del envío final por el usuario.
-- La base inicial retiró GTM; el commit posterior 0471cd7 lo reincorporó con consentimiento. Este candidato prepara la etiqueta Ads directa y conserva GTM, ambos desactivados mediante un gate. La CSP desplegable no se amplió. La configuración y los payloads remotos requieren la revisión indicada en `review/GOOGLE-ADS-PREPARATION.md`.
-- Cabeceras Vercel: CSP sin `unsafe-inline`, `object-src 'none'`, `connect-src 'none'`, `form-action 'none'`, bloqueo de framing, nosniff, referrer restrictivo y permisos de cámara/micrófono/geolocalización desactivados.
+- La base inicial retiró GTM; el commit 0471cd7 lo reincorporó con consentimiento. La actualización añade Ads directo AW-16968445825 y conserva GTM-5RM4RSMJ. Ambos requieren consentimiento V2 específico y el host de Peças. La CSP solo añade /gtag/js y el endpoint /ccm/collect observado. Resultados y límites en `checks/ADS-QA-20261110.md`.
+- Cabeceras Vercel: CSP sin `unsafe-inline`, `object-src 'none'`, conexiones restringidas a `https://pagead2.googlesyndication.com/ccm/collect`, `form-action 'none'`, bloqueo de framing, nosniff, referrer restrictivo y permisos de cámara/micrófono/geolocalización desactivados.
 - Solo `public/` se sirve. No hay `server.js`, `api/`, credenciales, `.env`, `.git`, `.vercel`, backups ni dependencias dentro de esa salida. No hay rewrite de API o catchall.
 - Se sustituyó el caché anual immutable de activos sin nombres versionados por caché de una hora revalidable.
 

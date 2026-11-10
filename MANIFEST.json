@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "note": "SHA-256 covers every packaged file except MANIFEST.json itself.",
+  "note": "SHA-256 covers every packaged file except MANIFEST.json itself and the local review-only folder.",
   "files": [
     {
       "path": ".editorconfig",
@@ -23,6 +23,11 @@
       "sha256": "e7c5a246e0a49f451156355407a0cc024aaf0a06f4653e73a6e643f429fb05ba"
     },
     {
+      "path": "checks/ADS-QA-20261110.md",
+      "bytes": 2748,
+      "sha256": "2ab2675af940789091d613856fa0a27165034d4768d179a14f9b3a8802c1173a"
+    },
+    {
       "path": "checks/assets.sha256.json",
       "bytes": 2006,
       "sha256": "5007b5b0c526a6f3608a354c3b2893e8f709e8640fe4a3c307152bf4aa6b30f1"
@@ -39,8 +44,8 @@
     },
     {
       "path": "DIFFERENCES.md",
-      "bytes": 1511,
-      "sha256": "9187bd9fda36f94d71c4b77075dd21993799ed594e0a0484f129dd2ac4b95213"
+      "bytes": 1524,
+      "sha256": "bde97702a481d39fed45333a729f966e02c0894b7e26de786f9f278cbe36137a"
     },
     {
       "path": "package-lock.json",
@@ -54,8 +59,8 @@
     },
     {
       "path": "PENDING.md",
-      "bytes": 2023,
-      "sha256": "ca9aaf16899dd29099417fbe134f47d65290c9d0625d81a654a2d1a2aed4c42e"
+      "bytes": 2002,
+      "sha256": "c932e054acab0dd54a5449eb0a53076f9f7e2946b4cdb94217ba949ee7a56d39"
     },
     {
       "path": "public/assets/app.js",
@@ -159,8 +164,8 @@
     },
     {
       "path": "public/assets/privacy.js",
-      "bytes": 10481,
-      "sha256": "c5c4a81de86f7fed4f380b6f8003732fa1b134ca33a2b9129eaecff053310a50"
+      "bytes": 10467,
+      "sha256": "9a3fec3889efb40ca166ee7a5f88bca070e1e2c43e5680a4f7057c9674458e89"
     },
     {
       "path": "public/assets/styles.css",
@@ -169,13 +174,13 @@
     },
     {
       "path": "public/index.html",
-      "bytes": 24310,
-      "sha256": "29b3a523fb1f8e7e80cb6d1f53cde39b63fd4ac4fd4ae357302bd797d0c4552a"
+      "bytes": 24245,
+      "sha256": "20643a4a106b3bbbc39d37609c01da638fd634a52cd8365488bae8e84ca0383f"
     },
     {
       "path": "public/privacidade.html",
-      "bytes": 8568,
-      "sha256": "66b554c4b7d72293a968d1b3b545c52f9b7df93d3d975531f4787a834791c038"
+      "bytes": 8208,
+      "sha256": "5a3597c81551b927ed99e73e9012246edfef12188d02e035518d3168344184d3"
     },
     {
       "path": "public/robots.txt",
@@ -194,18 +199,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2797,
-      "sha256": "bfae154a3c18b3e6e436fcf821c725be06f460b9ccc7042ccfe4d215678e446a"
-    },
-    {
-      "path": "review/GOOGLE-ADS-CSP-REVIEW.json",
-      "bytes": 3092,
-      "sha256": "f6edf0776bb920ade20db5dcb4647a2cd9c8b9752a537dfb72c6254307ed4513"
-    },
-    {
-      "path": "review/GOOGLE-ADS-PREPARATION.md",
-      "bytes": 8135,
-      "sha256": "85b084e50c52e9f4a22be6c6532129bd4e87a6df5de588545259ac503bcb91f3"
+      "bytes": 2858,
+      "sha256": "424f2a84473ce1b42c0601a6f8e00d57a3841f573ecd2176b43edc240bfdf140"
     },
     {
       "path": "scripts/check.cjs",
@@ -214,8 +209,8 @@
     },
     {
       "path": "scripts/manifest.cjs",
-      "bytes": 961,
-      "sha256": "7938480178b597b98c46f34fe0e1e25dc0fdc3f43381a9c06cf316c1f45fcf31"
+      "bytes": 1013,
+      "sha256": "fda68a5fb92d1f8dbaef0ca3883bed3a2cb651ef01600b05d50ac856151ccaa2"
     },
     {
       "path": "scripts/serve.cjs",
@@ -229,13 +224,13 @@
     },
     {
       "path": "scripts/test-privacy.cjs",
-      "bytes": 19824,
-      "sha256": "06151f90e48b877f3f4e80f9fa57c27464343b1a89ef4b1ed2c03e86e3b9a3fb"
+      "bytes": 19927,
+      "sha256": "8998384334af11117be4d3ce965b826efcdf389c47434326a2663354bed159cb"
     },
     {
       "path": "SECURITY.md",
-      "bytes": 3855,
-      "sha256": "4718557a3e68f6af0857c203829a77744a2dcdd8650db0341ff86e57e48228cb"
+      "bytes": 3920,
+      "sha256": "90a1822fe0ccc0351b909d27c58673d5f509426375c0cf0ce8ca9b171bdba78c"
     },
     {
       "path": "SOURCES.md",
@@ -244,8 +239,8 @@
     },
     {
       "path": "vercel.json",
-      "bytes": 1315,
-      "sha256": "68c0da90fe10a19d8f87de689363a13de65fc2affecc07fa813e4bf054012037"
+      "bytes": 1449,
+      "sha256": "a084543ddc8f3f4c8da868b5c9dec8f6b845519dce9b5c2dc271c85d3fa53432"
     }
   ]
 }
