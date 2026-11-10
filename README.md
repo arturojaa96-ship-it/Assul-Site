@@ -1,6 +1,6 @@
 # Assul - Claude v2 para GitHub e Vercel
 
-**Actualización del 10 de noviembre:** Google tag directa AW-16968445825 y el GTM existente requieren consentimiento V2 específico y solo cargan en el dominio de Peças o las pruebas locales. Se aplicó la CSP mínima aprobada y se validó el comportamiento actual en Chrome. No hay GA4, eventos de conversión ni cambios de campañas. Consulte `checks/ADS-QA-20261110.md` para resultados, límites y rollback.
+**Actualización GTM-only del 10 de noviembre:** se retira la instalación directa AW-16968445825. GTM-5RM4RSMJ queda como único cargador local, sujeto al consentimiento V2 específico y al dominio de Peças o pruebas locales. La CSP aprobada no cambia. No se añaden conversiones ni se modifica el contenedor remoto o las campañas. Validación local y límites en `checks/GTM-ONLY-QA-20261110.md`; el informe ADS anterior se conserva como histórico.
 
 Versión elegida por el usuario el 5 de noviembre de 2026. WhatsApp confirmado: **+55 41 3667-5877**. Se preparó sobre una copia del original; la vista pública de opiniones y la carpeta original no se modificaron.
 

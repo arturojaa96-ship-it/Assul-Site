@@ -1,5 +1,5 @@
-/* Assul Peças: direct Google tag AW-16968445825 plus existing GTM-5RM4RSMJ.
- * Both loaders require specific V2 consent and the approved Peças hostname. */
+/* Assul Peças: GTM-5RM4RSMJ is the only locally installed Google loader.
+ * The loader requires specific V2 consent and the approved Peças hostname. */
 (function () {
   'use strict';
   if (window.AssulPecasPrivacy) return;
@@ -11,26 +11,25 @@
   if (!panel || !status || !accept || !reject || !cancel) return;
   var openers = document.querySelectorAll('[data-privacy-open]');
   // Activation authorized for Peças; retain this switch for a reviewed rollback.
-  var ADS_CONFIGURATION_REVIEWED = true;
+  var MEASUREMENT_CONFIGURATION_REVIEWED = true;
   var KEY = 'assul_pecas_privacy_v2';
   var MAX_AGE = 180 * 24 * 60 * 60 * 1000;
   var allowed = false;
   var choiceKnown = false;
-  var scriptStates = { gtm: 'idle', ads: 'idle' };
+  var scriptStates = { gtm: 'idle' };
   var startupQueued = false;
   var reloading = false;
   var returnFocus = null;
   var savedForFuture = false;
   var forcedDenial = new URL(window.location.href).searchParams.get('privacy') === 'deny';
   var approvedHost = ['www.xn--assulautorizadapeas-myb.com.br', 'localhost', '127.0.0.1'].indexOf(window.location.hostname) !== -1;
-  window.AssulPecasPrivacy = Object.freeze({ version: 2, adsEnabled: ADS_CONFIGURATION_REVIEWED, destination: 'AW-16968445825' });
+  window.AssulPecasPrivacy = Object.freeze({ version: 2, gtmEnabled: MEASUREMENT_CONFIGURATION_REVIEWED, container: 'GTM-5RM4RSMJ' });
 
   function tell(text) { status.textContent = text; }
   function renderState() {
     panel.setAttribute('data-gtm-state', scriptStates.gtm);
-    panel.setAttribute('data-ads-state', scriptStates.ads);
   }
-  function hasStarted() { return startupQueued || scriptStates.gtm !== 'idle' || scriptStates.ads !== 'idle'; }
+  function hasStarted() { return startupQueued || scriptStates.gtm !== 'idle'; }
   function parse(raw) {
     try {
       var value = JSON.parse(raw);
@@ -118,14 +117,14 @@
     } catch (error) { failed(); }
   }
   function loadTools() {
-    if (!ADS_CONFIGURATION_REVIEWED || !allowed || !approvedHost || startupQueued) return;
+    if (!MEASUREMENT_CONFIGURATION_REVIEWED || !allowed || !approvedHost || startupQueued) return;
     startupQueued = true;
     if (window.dataLayer && !Array.isArray(window.dataLayer)) {
-      scriptStates.gtm = 'failed'; scriptStates.ads = 'failed'; renderState();
+      scriptStates.gtm = 'failed'; renderState();
       tell('Não foi possível carregar as ferramentas. Nenhuma nova tentativa será feita nesta página.'); return;
     }
     window.dataLayer = window.dataLayer || [];
-    // Both external scripts see default denial before any configuration or startup.
+    // The GTM loader sees default denial before startup.
     gtag('consent', 'default', {
       analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', personalization_storage: 'denied'
     });
@@ -133,19 +132,14 @@
       analytics_storage: 'denied', ad_storage: 'granted', ad_user_data: 'denied', ad_personalization: 'denied', personalization_storage: 'denied'
     });
     window.dataLayer.push({ assul_ads_measurement: 'granted', assul_ads_consent_version: 2 });
-    // One direct base configuration, without conversion event, label or user data.
-    // This Ads parameter does not disable all remote automatic-event detectors.
-    gtag('js', new Date());
-    gtag('config', 'AW-16968445825', { allow_ad_personalization_signals: false });
     window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
-    loadScript('ads', 'https://www.googletagmanager.com/gtag/js?id=AW-16968445825', 'a etiqueta do Google Ads');
     loadScript('gtm', 'https://www.googletagmanager.com/gtm.js?id=GTM-5RM4RSMJ', 'o Google Tag Manager');
   }
   function show(focus) {
     returnFocus = document.activeElement;
     panel.hidden = false;
     cancel.hidden = !choiceKnown;
-    tell(!ADS_CONFIGURATION_REVIEWED ? 'A medição está desativada nesta versão. Você pode registrar sua escolha; nenhuma ferramenta do Google será carregada.' : (choiceKnown ? (allowed ? 'Sua escolha atual permite a medição limitada de anúncios do Google.' : 'Sua escolha atual não permite a medição de anúncios do Google.') : 'Nada do Google será carregado antes de você permitir.'));
+    tell(!MEASUREMENT_CONFIGURATION_REVIEWED ? 'A medição está desativada nesta versão. Você pode registrar sua escolha; nenhuma ferramenta do Google será carregada.' : (choiceKnown ? (allowed ? 'Sua escolha atual permite a medição limitada de anúncios do Google.' : 'Sua escolha atual não permite a medição de anúncios do Google.') : 'Nada do Google será carregado antes de você permitir.'));
     if (focus) reject.focus();
   }
   function hide() {
