@@ -5,7 +5,7 @@ const assert = require('node:assert/strict');
 const vm = require('node:vm');
 const root = path.resolve(__dirname, '..');
 const inline = "\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n";
-const snippet = '<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-5RM4RSMJ"></script>\n<script>' + inline + '</script>';
+const snippet = '<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KSBHCF85"></script>\n<script>' + inline + '</script>';
 const hash = 'sha256-' + crypto.createHash('sha256').update(inline).digest('base64');
 assert.equal(hash, 'sha256-jYHg7tXSuuVUqjy+JeRT8vyG97+Spkw5IFHdQEBbmrw=');
 for (const name of ['index.html', 'privacidade.html']) {

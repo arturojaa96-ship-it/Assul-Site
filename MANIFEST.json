@@ -175,7 +175,7 @@
     {
       "path": "public/assets/privacy.js",
       "bytes": 7515,
-      "sha256": "79c7bf64d88f0fbd88685f32a82cf92fc6b841cc0e9650843f1e980a363480a1"
+      "sha256": "3b7753f601f63dd189a8962b29ead0c9765d37d79265a1a37ecceee7cbb7130b"
     },
     {
       "path": "public/assets/styles.css",
@@ -185,12 +185,12 @@
     {
       "path": "public/index.html",
       "bytes": 24795,
-      "sha256": "ee4755bc3800b784fa06a1266ae5a4d1fc0588e5c1fc4cf67982c640a621c4c8"
+      "sha256": "191947c0aceb4839f5b650bfdc8090ee019b320b0b8d13eeeda3e25e8fd5498b"
     },
     {
       "path": "public/privacidade.html",
       "bytes": 8821,
-      "sha256": "275e67ee04385697c6bd3a13f000272b22fc553b3879d8cb13315eb3e7a23079"
+      "sha256": "b4f936f2fe73e86ab1dcb423aef7e8227665bee3bbb6b387e9f2a9db1f304b8f"
     },
     {
       "path": "public/robots.txt",
@@ -215,7 +215,7 @@
     {
       "path": "scripts/check.cjs",
       "bytes": 6883,
-      "sha256": "1ceb04e4f84faf715c95e2419839af24d9f2492476861385ff630c2d82252c42"
+      "sha256": "d36f57c9df7479a99b5577bb0ac7999c16f59d62574e5fbaf2ce9b8716db3c1a"
     },
     {
       "path": "scripts/manifest.cjs",
@@ -235,12 +235,12 @@
     {
       "path": "scripts/test-matheus.cjs",
       "bytes": 3356,
-      "sha256": "67c66715e0ed0a3578ceee8b08b262b321e27885563bc159fbd700fe7a88cd1f"
+      "sha256": "35fe3001f314c52e172552be1caae74942433dc2a1163679dd24ebfc82f4ffff"
     },
     {
       "path": "scripts/test-privacy.cjs",
       "bytes": 9987,
-      "sha256": "00220565a39f5c98b28bea649814b14d11ee67dfc804b69462734c71add3bec0"
+      "sha256": "ea86bf1112f3f13f78093ef0f4fa355e43d3b119dc7b2dff556d88a00e959552"
     },
     {
       "path": "SECURITY.md",

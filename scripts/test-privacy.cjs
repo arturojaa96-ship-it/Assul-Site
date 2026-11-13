@@ -5,7 +5,7 @@ const assert = require('node:assert/strict');
 const root = path.resolve(__dirname, '..');
 const source = fs.readFileSync(path.join(root, 'public/assets/privacy.js'), 'utf8');
 const KEY = 'assul_pecas_privacy_v2', AGE = 180 * 24 * 60 * 60 * 1000, NOW = 1794225600000;
-const GTM = 'https://www.googletagmanager.com/gtm.js?id=GTM-5RM4RSMJ';
+const GTM = 'https://www.googletagmanager.com/gtm.js?id=GTM-KSBHCF85';
 const CONSENTS = ['analytics_storage', 'ad_storage', 'ad_user_data', 'ad_personalization', 'personalization_storage'];
 const groups = [];
 function test(name, fn) { fn(); groups.push(name); }

@@ -19,7 +19,7 @@
   var savedForFuture = false;
   var forcedDenial = new URL(window.location.href).searchParams.get('privacy') === 'deny';
   var approvedHost = ['www.xn--assulautorizadapeas-myb.com.br', 'localhost', '127.0.0.1'].indexOf(window.location.hostname) !== -1;
-  window.AssulPecasPrivacy = Object.freeze({ version: 2, gtmEnabled: true, container: 'GTM-5RM4RSMJ' });
+  window.AssulPecasPrivacy = Object.freeze({ version: 2, gtmEnabled: true, container: 'GTM-KSBHCF85' });
 
   function tell(text) { status.textContent = text; }
   function parse(raw) {

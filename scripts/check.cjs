@@ -18,7 +18,7 @@ for (const file of publicFiles) {
 let assets = 0, anchors = 0, whatsapp = 0;
 for (const file of htmlFiles) {
   const html = fs.readFileSync(file,'utf8');
-  assert(!/GTM-(?!5RM4RSMJ\b)|google-analytics|\[RAZÃO SOCIAL\]|\[EMAIL|\[DATA\]|\[HORÁRIO|00\.000\.000\/0001-00|554131950160/.test(html), 'Unconfirmed data/integration');
+  assert(!/GTM-(?!KSBHCF85\b)|google-analytics|\[RAZÃO SOCIAL\]|\[EMAIL|\[DATA\]|\[HORÁRIO|00\.000\.000\/0001-00|554131950160/.test(html), 'Unconfirmed data/integration');
   assert(html.includes('rel="canonical" href="https://www.xn--assulautorizadapeas-myb.com.br/'), 'Approved canonical missing');
   assert(html.includes('30.401.920/0001-82'), 'Public legal identity missing');
   assert(!/\sstyle=/.test(html), 'CSP forbids inline styles');
